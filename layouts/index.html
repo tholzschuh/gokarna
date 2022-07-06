@@ -6,7 +6,7 @@
         {{ end }}
 	</div>
     <h1>{{ .Site.Params.Greeting }}</h1>
-    <h3>{{ .Site.Params.FirstSubtitle | safeHTML }}</h3>
+    <h3>{{ .Site.Params.FirstSubtitle | markdownify }}</h3>
     <h3>{{ .Site.Params.SecondSubtitle }}</h3>
     <h4>{{ .Site.Params.Email }}</h4>
 </section>
