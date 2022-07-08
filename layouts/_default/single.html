@@ -8,4 +8,14 @@
         {{- partial "page.html" . -}}
         {{- partial "toc.html" . -}}
     {{ end }}
+
+    {{ if eq .Type "research-post" }}
+        {{- partial "research-post.html" . -}}
+        {{- partial "toc.html" . -}}
+    {{ end }}
+
+    {{ if eq .Type "teaching-post" }}
+        {{- partial "teaching-post.html" . -}}
+        {{- partial "toc.html" . -}}
+    {{ end }}
 {{ end }}
